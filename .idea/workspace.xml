@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb0a15e0-0b47-4e07-a5cb-795fb3bfdd0c" name="Changes" comment="code and tests added">
+    <list default="true" id="fb0a15e0-0b47-4e07-a5cb-795fb3bfdd0c" name="Changes" comment="code fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductTest.shouldSearch4">
+  <component name="RunManager" selected="JUnit.ProductTest.shouldSearch3">
     <configuration name="ProductTest.shouldRemoveById1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_2" />
       <extension name="coverage">
@@ -147,9 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductTest.shouldSearch3" />
         <item itemvalue="JUnit.ProductTest.shouldSearch4" />
         <item itemvalue="JUnit.ProductTest.shouldSearch2" />
-        <item itemvalue="JUnit.ProductTest.shouldSearch3" />
         <item itemvalue="JUnit.ProductTest.shouldSearch" />
         <item itemvalue="JUnit.ProductTest.shouldRemoveById1" />
       </list>
@@ -178,12 +179,20 @@
       <option name="project" value="LOCAL" />
       <updated>1673715263349</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="code fixed">
+      <created>1673792194664</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673792194664</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="code and tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="code and tests added" />
+    <MESSAGE value="code fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="code fixed" />
   </component>
 </project>

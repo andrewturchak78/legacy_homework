@@ -20,6 +20,11 @@ public class ProductManager {
         for (Product product : repo.findAll()) {
             if (matches(product, search)) {
                 Product[] tmp = new Product[result.length + 1];
+                int i = 0;
+                for (Product results : result) {
+                    tmp[i] = results;
+                    i++;
+                }
                 tmp[result.length] = product;
                 result = tmp;
             }

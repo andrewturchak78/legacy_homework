@@ -10,8 +10,8 @@ public class ProductTest {
 
     Book book1 = new Book(3, "Война и мир", "600", "Толстой");
     Book book2 = new Book(6, "Преступление и наказние", "700", "Достоевский");
-    Book book3 = new Book(5, "Бедная Лиза", "400", "Карамзин");
-    Book book4 = new Book(7, "Муму", "800", "Тургенев");
+    Book book3 = new Book(5, "Бедная Лиза", "600", "Карамзин");
+    Book book4 = new Book(7, "Война и мир", "800", "Тургенев");
     Book book5 = new Book(8, "Портрет Дориана Грея", "750", "Уайльд");
 
     Smartphone phone1 = new Smartphone(10, "Iphone X", "5500", "Apple");
@@ -109,7 +109,6 @@ public class ProductTest {
         manager.add(book1);
         manager.add(book2);
         manager.add(book3);
-        manager.add(book4);
         String name = "Война и мир";
         Product[] expected = {book1};
         Product[] actual = manager.searchBy(name);
@@ -122,22 +121,10 @@ public class ProductTest {
         manager.add(book2);
         manager.add(book3);
         manager.add(book4);
-        manager.add(phone1);
-        manager.add(phone2);
         String name1 = "Война и мир";
-        String name2 = "Бедная Лиза";
-        String name3 = "Samsung Galaxy";
         manager.searchBy(name1);
-        manager.searchBy(name2);
-        manager.searchBy(name3);
-        Product[] expected1 = {book1};
-        Product[] expected2 = {book3};
-        Product[] expected3 = {phone2};
-        Product[] actual1 = manager.searchBy(name1);
-        Product[] actual2 = manager.searchBy(name2);
-        Product[] actual3 = manager.searchBy(name3);
-        Assertions.assertArrayEquals(actual1, expected1);
-        Assertions.assertArrayEquals(actual2, expected2);
-        Assertions.assertArrayEquals(actual3, expected3);
+        Product[] expected = {book1, book4};
+        Product[] actual = manager.searchBy(name1);
+        Assertions.assertArrayEquals(actual, expected);
     }
 }
