@@ -11,7 +11,8 @@ public class ProductManager {
     public void add(Product product) {
         repo.addProduct(product);
     }
-    public Product [] findAll() {
+
+    public Product[] findAll() {
         return repo.findAll();
     }
 

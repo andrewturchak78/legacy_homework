@@ -127,4 +127,31 @@ public class ProductTest {
         Product[] actual = manager.searchBy(name1);
         Assertions.assertArrayEquals(actual, expected);
     }
+
+    @Test
+    public void shouldCatchException() {
+        manager.add(phone1);
+        manager.add(phone2);
+        manager.add(phone3);
+        manager.add(phone4);
+        manager.add(phone5);
+
+        Assertions.assertThrows(NotFoundException.class, () -> {
+            repo.removeById(27);
+        });
+    }
+
+    @Test
+    public void shouldCatchException2() {
+        repo.addProduct(book1);
+        repo.addProduct(book2);
+        repo.addProduct(book3);
+        repo.addProduct(book4);
+        repo.addProduct(book5);
+
+
+        Assertions.assertThrows(AlreadyExistsException.class, () -> {
+            repo.addProduct(book5);
+        });
+    }
 }

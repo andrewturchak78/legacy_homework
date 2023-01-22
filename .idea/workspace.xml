@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb0a15e0-0b47-4e07-a5cb-795fb3bfdd0c" name="Changes" comment="code fixed">
+    <list default="true" id="fb0a15e0-0b47-4e07-a5cb-795fb3bfdd0c" name="Changes" comment="shouldSearch test added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +54,8 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductTest.shouldSearch3">
-    <configuration name="ProductTest.shouldRemoveById1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductTest.shouldCatchException2">
+    <configuration name="ProductTest.shouldCatchException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_2" />
       <extension name="coverage">
         <pattern>
@@ -63,13 +65,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ProductTest" />
-      <option name="METHOD_NAME" value="shouldRemoveById1" />
+      <option name="METHOD_NAME" value="shouldCatchException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest.shouldSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest.shouldCatchException2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_2" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +81,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ProductTest" />
-      <option name="METHOD_NAME" value="shouldSearch" />
+      <option name="METHOD_NAME" value="shouldCatchException2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest.shouldSearch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest.shouldRemoveById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP_2" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +97,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ProductTest" />
-      <option name="METHOD_NAME" value="shouldSearch2" />
+      <option name="METHOD_NAME" value="shouldRemoveById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductTest.shouldCatchException2" />
+        <item itemvalue="JUnit.ProductTest.shouldCatchException" />
+        <item itemvalue="JUnit.ProductTest.shouldRemoveById" />
         <item itemvalue="JUnit.ProductTest.shouldSearch3" />
         <item itemvalue="JUnit.ProductTest.shouldSearch4" />
-        <item itemvalue="JUnit.ProductTest.shouldSearch2" />
-        <item itemvalue="JUnit.ProductTest.shouldSearch" />
-        <item itemvalue="JUnit.ProductTest.shouldRemoveById1" />
       </list>
     </recent_temporary>
   </component>
@@ -186,13 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673792194664</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="shouldSearch test added">
+      <created>1673800985832</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673800985832</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="code and tests added" />
     <MESSAGE value="code fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="code fixed" />
+    <MESSAGE value="shouldSearch test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="shouldSearch test added" />
   </component>
 </project>
